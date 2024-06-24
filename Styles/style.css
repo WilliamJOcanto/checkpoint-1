@@ -1,0 +1,156 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  display: inline-block;
+  padding-top: 55px;
+}
+
+header img {
+  width: 180px;
+}
+
+main {
+  background-color: blue;
+}
+
+aside {
+  background-color: black;
+  height: 325px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.contenedorMayor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 70px;
+}
+
+.contenedorCards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
+}
+
+.contenedorCards .card img {
+  width: 171px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.contenedorCards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  height: 223px;
+  overflow: hidden;
+}
+
+.contenedorCards .card p {
+  text-align: center;
+}
+
+.contenedorCards .card ul {
+  padding-left: 9px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+}
+
+.contenedorCards .card ul p {
+  padding-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: gray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+footer .tel {
+  color: black;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+footer span {
+  padding-top: 10px;
+}
+
+.links {
+  list-style: none;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.contenedorMenor {
+  width: 20vw;
+}
+
+.contenedorMayor .contenedorMenor .links .linkAuto {
+  background-color: blue;
+  text-align: center;
+  padding: 8px 0px;
+}
+
+.contenedorMayor .contenedorMenor .links .linkHome {
+  height: 140px;
+  text-align: center;
+  padding-top: 56px;
+}
+
+.contenedorMayor .contenedorMenor .links .linkPick {
+  text-align: center;
+  padding-top: 56px;
+}
+
+@media only screen and (width >= 425px) and (width <= 772px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedorMayor{
+    flex-direction: column;
+    gap: 23px;
+  }
+  .contenedorMayor .contenedorCards{
+    flex-direction: column;
+    gap: 21px;
+    padding-bottom: 10px;
+  }
+  footer{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  aside{
+    width: 425px;
+  }
+  .contenedorMayor .contenedorMenor .links .linkAuto{
+    width: 425px;
+  }
+  .contenedorMayor .contenedorMenor .links .linkHome, .linkPick{
+    width: 425px;
+  }
+}
